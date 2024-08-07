@@ -1,83 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/project-DevStudents/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Yachtjet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
     <script type="module" crossorigin src="/project-DevStudents/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-DevStudents/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/project-DevStudents/assets/index-6590da74.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project-DevStudents/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+    <div class="header-content">
+      <a class="header-logo logo" href="../index.html">yachtjet</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">about</a>
+          </li>
 
-      <ul class="actions">
-        <li class="action">
+          <li class="nav-item">
+            <a href="#yachts" class="nav-link">Yachts</a>
+          </li>
+          <li class="nav-item">
+            <a href="#review" class="nav-link">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-list">
+        <li class="social-item">
           <a
-            class="link"
-            href="https://vitejs.dev/guide/"
+            class="social-link"
             target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
+            href="https://www.instagram.com/goitclub/"
           >
+            <svg class="social-icon" width="24" height="24">
+              <use href="/project-DevStudents/assets/icons-2590b486.svg#icon-instagram"></use>
+            </svg>
+          </a>
         </li>
-        <li class="action">
+        <li class="social-item">
           <a
-            class="link"
-            href="https://github.com/vitejs/vite"
+            class="social-link"
             target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
+            href="https://www.youtube.com/c/GoIT"
           >
+            <svg class="social-icon" width="24" height="24">
+              <use href="/project-DevStudents/assets/icons-2590b486.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            target="_blank"
+            href="https://www.facebook.com/goITclub/"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="/project-DevStudents/assets/icons-2590b486.svg#icon-facebook"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/project-DevStudents/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+      <div class="header-toggle-btn" id="menuBtn">
+        <span class="header-toggle-btn-icon"></span>
+        <span class="header-toggle-btn-icon"></span>
+      </div>
     </div>
   </div>
+</header>
+<div class="mobile-menu" id="mobMenu">
+  <div class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#about" class="nav-link">about</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#yachts" class="nav-link">Yachts</a>
+      </li>
+      <li class="nav-item">
+        <a href="#review" class="nav-link">Reviews</a>
+      </li>
+    </ul>
+  </div>
+  <ul class="social-list">
+    <li class="social-item">
+      <a
+        class="social-link"
+        target="_blank"
+        href="https://www.instagram.com/goitclub/"
+      >
+        <svg class="social-icon" width="24" height="24">
+          <use href="/project-DevStudents/assets/icons-2590b486.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-item">
+      <a
+        class="social-link"
+        target="_blank"
+        href="https://www.youtube.com/c/GoIT"
+      >
+        <svg class="social-icon" width="24" height="24">
+          <use href="/project-DevStudents/assets/icons-2590b486.svg#icon-youtube"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-item">
+      <a
+        class="social-link"
+        target="_blank"
+        href="https://www.facebook.com/goITclub/"
+      >
+        <svg class="social-icon" width="24" height="24">
+          <use href="/project-DevStudents/assets/icons-2590b486.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+    <main>
+      <section class="hero">
+  <div class="container">hero</div>
 </section>
+
+      <section class="about section" id="about">
+  <div class="container">about us</div>
+</section>
+
+      <section class="yachts section">
+  <div class="container">yachts</div>
+</section>
+
+      <section class="advantages section">
+  <div class="container">advantages</div>
+</section>
+
+      <section class="rent section">
+  <div class="container">rent</div>
+</section>
+
+      <section class="review section">
+  <div class="container">review</div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">footer</div>
+</footer>
 
 
     
