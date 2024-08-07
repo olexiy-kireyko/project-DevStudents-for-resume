@@ -31,7 +31,7 @@ body {
 
 .container {
   min-width: 280px;
-  max-width: 335px;
+  max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -132,6 +132,8 @@ h2 {
 
   .btn {
     max-width: 179px;
+    font-size: 18px;
+    line-height: 1.1;
   }
 
   .send-btn {
