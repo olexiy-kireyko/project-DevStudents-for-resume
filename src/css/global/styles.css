@@ -41,27 +41,41 @@ body {
   padding-bottom: 80px;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 704px;
-  }
-
-  .section {
-    padding-bottom: 150px;
-  }
+.btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--almost-white);
+  border-radius: 15px;
+  padding: 14px 32px;
+  max-width: 141px;
+  width: 100%;
+  text-transform: capitalize;
+  transition:
+    color var(--animation),
+    background-color var(--animation);
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1080px;
-    padding: 0 50px;
-  }
+.btn:focus,
+.btn:hover {
+  background-color: var(--almost-white);
+  border-color: var(--almost-white);
+  color: var(--dark-teal);
 }
 
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1340px;
-  }
+.primary-btn {
+  background-color: var(--dark-teal);
+  border: 1px solid var(--dark-teal);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid var(--almost-white);
+}
+
+.send-btn {
+  max-width: 122px;
 }
 
 .social-list {
@@ -100,6 +114,14 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+
+  .section {
+    padding-bottom: 150px;
+  }
+
   h1 {
     font-size: 70px;
   }
@@ -107,12 +129,32 @@ h2 {
   h2 {
     font-size: 48px;
   }
+
+  .btn {
+    max-width: 179px;
+  }
+
+  .send-btn {
+    max-width: 194px;
+    padding: 18px 75px;
+  }
 }
 
 @media (min-width: 1280px) {
+  .container {
+    max-width: 1080px;
+    padding: 0 50px;
+  }
+
   h1 {
     font-size: 80px;
     max-width: 1001px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1340px;
   }
 }
