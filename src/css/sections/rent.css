@@ -77,6 +77,7 @@
   border-radius: 24px;
   width: 335px;
   height: 412px;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
