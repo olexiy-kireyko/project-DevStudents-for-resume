@@ -74,6 +74,12 @@
     justify-content: center;
 }
 
+@media (max-width: 340px) {
+    .footer-logo-nav {
+        gap: 10px;
+    }
+}
+
 /*------------@media-768px-------------*/
 @media (min-width: 768px) {
 
