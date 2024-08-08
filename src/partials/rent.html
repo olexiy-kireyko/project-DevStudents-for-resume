@@ -1,3 +1,73 @@
-<section class="rent section">
-  <div class="container">rent</div>
+<section class="rent section" id="rent">
+  <div class="container">
+    <div class="rent-section-full">
+      <div class="working-part">
+        <h2 class="rent-section-title">Rent a yacht now</h2>
+        <form class="rent-form">
+          <div class="rent-input-fields-container">
+            <input
+              class="rent-input-fields"
+              type="text"
+              name="input-name"
+              placeholder="Full name"
+            />
+            <input
+              class="rent-input-fields"
+              type="email"
+              name="input-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            />
+            <input
+              class="rent-input-fields"
+              type="tel"
+              name="input-tel-number"
+              placeholder="Phone number"
+              pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+            />
+            <textarea
+              class="textarea-field"
+              name="textarea-user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <button class="btn primary-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ../img/rent-desk1440-img-1x.jpg,
+            ../img/rent-desk1440-img-2x.jpg 2x
+          "
+        />
+        <source
+          class="img-1280"
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/rent-desk1280-img-1x.jpg,
+            ../img/rent-desk1280-img-2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/rent-tablet-img-1x.jpg,
+            ../img/rent-tablet-img-2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 335px)"
+          srcset="../img/rent-mob-img-1x.jpg, ../img/rent-mob-img-2x.jpg 2x"
+        />
+        <img
+          class="rent-img"
+          srcset="../img/rent-mob-img-1x.jpg"
+          alt="Photo of the yacht"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
