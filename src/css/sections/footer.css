@@ -77,6 +77,10 @@
 /*------------@media-768px-------------*/
 @media (min-width: 768px) {
 
+    .footer .container {
+        padding: 0px 16px;
+    }
+
     .footer-container {
         padding: 50px 0px 20px;
     }
@@ -121,6 +125,10 @@
 
 /*------------@media-1280px-------------*/
 @media (min-width: 1280px) {
+
+    .footer .container {
+        padding: 0px 25px;
+    }
 
     .container-nav-icon {
         gap: 311px;
