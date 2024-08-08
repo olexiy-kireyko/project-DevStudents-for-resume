@@ -19,6 +19,13 @@
 .footer-logo-nav {
     display: flex;
     gap: 37px;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.03em;
 }
 
 .footer-nav-list {
@@ -100,9 +107,7 @@
     }
 
     .footer-logo {
-        font-weight: 500;
         font-size: 20px;
-        letter-spacing: -0.03em;
     }
 
     .footer-nav-item {
