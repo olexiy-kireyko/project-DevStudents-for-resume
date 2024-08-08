@@ -116,6 +116,7 @@ h2 {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
 
   .section {
