@@ -2,45 +2,47 @@
   <div class="container">
     <h2 hidden>advantages</h2>
     <div class="box-a">
-      <ul class="advantages-list">
-        <ol class="advantages-item1">
-          01
+      <ol class="advantages-list">
+        <li class="advantages-item1">
           <hr class="line-item" />
           <p class="text text">
-            Swimming and water sports: try your <br />
-            hand at water skiing
+            Swimming and water sports: try your <br class="br1" />
+            hand <br class="br2" />at water skiing
           </p>
-        </ol>
-        <ol class="advantages-item2">
-          02
+        </li>
+        <li class="advantages-item2">
           <hr class="line-item" />
           <p class="text text2">Fishing: try to catch your own dinner</p>
-        </ol>
-        <ol class="advantages-item3">
-          03
+        </li>
+        <li class="advantages-item3">
           <hr class="line-item" />
           <p class="text text3">
             Sightseeing tours: take a shore or island tour, enjoy the views and
             sunsets from the water
           </p>
-        </ol>
-        <ol class="advantages-item4">
-          04
+        </li>
+        <li class="advantages-item4">
           <hr class="line-item" />
           <p class="text text4">
             Rest and relaxation: read a book or listen to music while enjoying
             the outdoor atmosphere.
           </p>
-        </ol>
-      </ul>
-    </div>
-
-    <div class="kartinka">
-      <img
-        class="img-yacht-interior"
-        src="/src/img/advantages/yacht-interior-img-@1x.jpg"
-        alt="yacht interior"
-      />
+        </li>
+      </ol>
+      <div class="yacht-interior-image">
+        <picture>
+          <source
+            srcset="
+              /src/img/advantages/yacht-interior-img-@1x.jpg,
+              /src/img/advantages/yacht-interior-img-@2x.jpg
+            "
+          />
+          <img
+            src="./src/img/advantages/yacht-interior-img-1x.jpg"
+            alt="Yacht"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
