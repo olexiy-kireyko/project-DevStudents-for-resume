@@ -115,7 +115,7 @@
   }
 
   .yachts-list-item:nth-child(2n) {
-    display: block;
+    display: flex;
   }
 
   .yachts-list {
@@ -152,7 +152,7 @@
   }
 
   .yachts-list-item:nth-child(2n + 1) {
-    display: block;
+    display: flex;
   }
 
   .yachts-list {
@@ -170,6 +170,10 @@
   }
 
   .yachts-list-item {
-    flex-basis: calc((100% - (32px * 2)) / 3);
+    width: calc((100% - (32px * 2)) / 3);
   }
+}
+
+.yachts-list-item.not-active {
+  display: none;
 }
