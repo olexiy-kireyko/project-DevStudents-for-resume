@@ -1,2 +1,134 @@
 .advantages {
+  width: 1180px;
+  height: 424px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 32px;
+  padding: 0px;
+}
+
+.section {
+  width: 1280px;
+}
+.container {
+  display: flex;
+  max-width: 1280px;
+  padding: 0 50px;
+}
+.box-a {
+  width: 1180px;
+}
+.advantages-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 90px;
+  padding-right: 50px;
+  background-color: var(--dark-teal);
+  border-radius: 24px;
+  width: 716px;
+  height: 424px;
+  border: 50px;
+}
+.advantages-item1 {
+  width: 280px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--almost-white);
+  padding: 0;
+  margin-left: 50px;
+}
+
+.advantages-item2 {
+  width: 292px;
+  height: 85px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--almost-white);
+  padding: 0;
+  margin-left: 32px;
+}
+.advantages-item3 {
+  width: 292px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--almost-white);
+  padding: 0;
+  margin-left: 50px;
+  margin-bottom: 90px;
+  margin-top: 44px;
+}
+.advantages-item4 {
+  width: 292px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fbfbfb;
+  margin-top: 44px;
+  padding: 0;
+  margin-left: 32px;
+  margin-bottom: 90px;
+}
+
+.text {
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  font-family: 'Inter', sans-serif;
+}
+
+.text1 {
+  width: 238px;
+  height: 30px;
+}
+
+.text2 {
+  width: 292px;
+  height: 15px;
+}
+
+.text3 {
+  width: 292px;
+  height: 30px;
+}
+
+.text4 {
+  width: 292px;
+  height: 30px;
+}
+.img-yacht-interior {
+  display: flex;
+}
+
+.line-item {
+  border-radius: 18px;
+  width: 280px;
+  height: 2px;
+  color: rgba(251, 251, 251, 0.1);
+  opacity: 0.8;
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.kartinka {
+  border-radius: 24px;
+  min-width: 432px;
+  height: 424px;
+  border: 1px solid red;
+  margin-left: 32px;
 }
