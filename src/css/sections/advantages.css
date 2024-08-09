@@ -48,6 +48,7 @@ p:hover,
 hr:hover {
   color: var(--dark-navy);
   border-color: var(--dark-navy);
+  cursor: pointer;
 }
 
 .advantages-list > li {
@@ -97,7 +98,7 @@ hr:hover {
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.05em;
-  color: #fbfbfb;
+  color: var(--almost-white);
   margin-top: 44px;
   padding: 0;
   margin-bottom: 90px;
@@ -109,7 +110,7 @@ hr:hover {
   font-size: 13px;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: #fbfbfb;
+  color: var(--almost-white);
   font-family: 'Inter', sans-serif;
 }
 
@@ -138,7 +139,6 @@ hr:hover {
 
 .line-item {
   border-radius: 18px;
-  color: white;
   opacity: 0.8;
   margin: 0;
   margin-top: 18px;
@@ -148,9 +148,15 @@ hr:hover {
 
 .yacht-interior-image {
   border-radius: 24px;
-  min-width: 432px;
+  max-width: 432px;
   height: 424px;
   margin-left: 32px;
+}
+
+.yacht-img-delta {
+  border-radius: 24px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .br2 {
@@ -173,7 +179,12 @@ hr:hover {
   }
 
   .yacht-interior-image {
+    max-width: 704px;
     margin: 32px;
+  }
+
+  .yacht-img-delta {
+    width: 100%;
   }
 }
 
