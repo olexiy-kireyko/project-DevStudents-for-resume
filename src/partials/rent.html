@@ -5,6 +5,7 @@
         <h2 class="rent-section-title">Rent a yacht now</h2>
         <form class="rent-form">
           <div class="rent-input-fields-container">
+            <label for="input-name"></label>
             <input
               class="rent-input-fields"
               type="text"
@@ -13,6 +14,9 @@
               pattern="[A-Za-z\s]+"
               required
             />
+          </div>
+          <div class="rent-input-fields-container">
+            <label for="input-email"></label>
             <input
               class="rent-input-fields"
               type="email"
@@ -21,6 +25,9 @@
               pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               required
             />
+          </div>
+          <div class="rent-input-fields-container">
+            <label for="input-tel-number"></label>
             <input
               class="rent-input-fields"
               type="tel"
@@ -29,8 +36,11 @@
               pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
               required
             />
+          </div>
+          <div class="rent-textarea-fields-container">
+            <label for="textarea-user-comment"></label>
             <textarea
-              rows="5"
+              rows="4"
               class="textarea-field"
               name="textarea-user-comment"
               id="user-comment"
