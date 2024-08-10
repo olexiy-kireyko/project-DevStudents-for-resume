@@ -31,7 +31,7 @@
   font-size: 12px;
   line-height: 140%;
   text-align: center;
-  color: var(--almost-white-70);
+  color: rgba(251, 251, 251, 0.7);
   max-width: 335px;
   width: 100%;
   margin: 0 auto 38px;
@@ -39,6 +39,28 @@
 @media (min-width: 768px) {
   .hero-title {
     max-width: 704px;
+  }
+  .hero-description {
+    font-size: 16px;
+    margin: 0 auto 48px;
+    max-width: 597px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-title {
+    max-width: 1001px;
+  }
+  .hero-description {
+    font-size: 16px;
+    margin: 0 auto 48px;
+    max-width: 597px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-title {
+    max-width: 1001px;
   }
   .hero-description {
     font-size: 16px;
