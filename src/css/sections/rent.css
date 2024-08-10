@@ -90,6 +90,7 @@
 .rent-img {
   border-radius: 24px;
   max-width: 335px;
+
   object-fit: cover;
   object-position: center;
 }
@@ -120,12 +121,6 @@
     margin-bottom: 50px;
   }
 
-  /* .btn {
-    max-width: 179px;
-    font-size: 18px;
-    line-height: 1.1;
-  } */
-
   .rent-input-fields {
     padding: 18px 18px;
     width: 472px;
@@ -140,8 +135,7 @@
 
   .textarea-field {
     padding: 18px 18px;
-    width: 472px;
-    height: 116px;
+    width: 100%;
   }
 
   /* .textarea-field::placeholder {
@@ -173,7 +167,6 @@
 
   .rent-img {
     max-width: 658px;
-    /* height: 536px; */
   }
 }
 
@@ -188,6 +181,5 @@
 
   .rent-img {
     max-width: 768px;
-    /* height: 536px; */
   }
 }
