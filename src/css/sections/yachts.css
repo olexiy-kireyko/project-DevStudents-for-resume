@@ -105,6 +105,11 @@
   color: var(--almost-black);
 }
 
+.yachts-container .secondary-btn {
+  text-align: center;
+  white-space: nowrap;
+}
+
 @media (min-width: 768px) {
   .yachts-container {
     gap: 50px;
