@@ -124,6 +124,15 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: var(--almost-white) !important;
+}
+
+.section .slick-dots {
+  bottom: -40px;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
