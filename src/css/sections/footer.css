@@ -1,2 +1,147 @@
-.footer {
+.footer .container {
+    padding: 0px 10px;
+}
+
+.footer-container {
+    padding: 40px 30px 20px;
+    background-color: var(--dark-teal);
+    border-radius: 24px 24px 0 0;
+}
+
+.container-logo-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 37px;
+    justify-content: center;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+}
+
+.footer-nav-list {
+    display: flex;
+    gap: 4px;
+}
+
+.footer-nav-item {
+    max-width: 66px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(251, 251, 251, 0.3);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: #1b414b;
+    background-color: #fbfbfb;
+}
+
+.footer-nav-link:active,
+.footer-nav-link:focus {
+    border: 1px solid #000;
+    background-color: var(--dark-teal-50);
+    color: #fbfbfb;
+    height: 40px;
+}
+
+.footer-social-list .social-link {
+    fill: #fbfbfb;
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    max-width: 277px;
+    margin: 0 auto 82px;
+}
+
+.footer-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: rgba(251, 251, 251, 0.4);
+}
+
+.footer-text-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 373px) {
+    .footer-container {
+        padding: 40px 10px 20px;
+    }
+
+    .container-logo-nav {
+        gap: 80px 10px;
+    }
+}
+
+/*------------@media-768px-------------*/
+@media (min-width: 768px) {
+
+    .footer .container {
+        padding: 0px 16px;
+    }
+
+    .footer-container {
+        padding: 50px 48px 20px;
+    }
+
+    .container-logo-nav {
+        justify-content: space-between;
+        margin-bottom: 96px;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+    }
+
+    .footer-nav-item {
+        min-width: 91px;
+    }
+
+    .footer-social-list {
+        align-items: normal;
+    }
+
+    .footer-title {
+        font-size: 32px;
+        max-width: 520px;
+        margin: 0 auto 99px;
+    }
+
+    .footer-text-container {
+        gap: 32px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 1.18;
+    }
+}
+
+/*------------@media-1280px-------------*/
+@media (min-width: 1280px) {
+
+    .footer .container {
+        padding: 0px 25px;
+    }
+
+    .footer-container {
+        padding: 50px 75px 20px;
+    }
+
+    .footer-title {
+        max-width: 640px;
+    }
 }
