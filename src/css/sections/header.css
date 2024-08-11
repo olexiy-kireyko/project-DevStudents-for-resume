@@ -169,7 +169,7 @@
     display: block;
   }
 
-  .header .nav-list {
+  .nav-list {
     display: flex;
     gap: 4px;
   }
