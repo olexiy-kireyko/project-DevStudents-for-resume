@@ -11,12 +11,14 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
+              if (id.includes('slick-carousel')) {
+                return 'slick';
+              }
               return 'vendor';
             }
           },
@@ -26,5 +28,8 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
     },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    optimizeDeps: {
+      include: ['slick-carousel'],
+    },
   };
 });
