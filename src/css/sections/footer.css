@@ -1,5 +1,5 @@
 .footer .container {
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 .footer-container {
@@ -11,8 +11,7 @@
 .container-logo-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px 37px;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 40px;
     align-items: flex-start;
 }
@@ -30,31 +29,26 @@
 
 .footer-nav-item {
     max-width: 66px;
-    height: 40px;
     border-radius: 8px;
     background: rgba(251, 251, 251, 0.3);
 }
 
 .footer-nav-link:hover,
-.footer-nav-link:focus {
-    color: #1b414b;
-    background-color: #fbfbfb;
+.footer-nav-link:focus,
+.footer-nav-link:active {
+    color: var(--dark-teal);
+    background-color: var(--almost-white);
 }
 
-.footer-nav-link:active,
-.footer-nav-link:focus {
-    border: 1px solid #000;
-    background-color: var(--dark-teal-50);
-    color: #fbfbfb;
-    height: 40px;
+.footer-social-list {
+  margin:  80px auto 0;
 }
 
 .footer-social-list .social-link {
-    fill: #fbfbfb;
+    fill: var(--almost-white);
 }
 
 .footer-title {
-    font-weight: 400;
     font-size: 18px;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -67,7 +61,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: rgba(251, 251, 251, 0.4);
+    color: var(--almost-white-40);
 }
 
 .footer-text-container {
@@ -76,13 +70,9 @@
     justify-content: center;
 }
 
-@media (max-width: 373px) {
+@media (max-width: 374px) {
     .footer-container {
         padding: 40px 10px 20px;
-    }
-
-    .container-logo-nav {
-        gap: 80px 10px;
     }
 }
 
@@ -90,7 +80,7 @@
 @media (min-width: 768px) {
 
     .footer .container {
-        padding: 0px 16px;
+        padding: 0 16px;
     }
 
     .footer-container {
@@ -112,11 +102,12 @@
 
     .footer-social-list {
         align-items: normal;
+      margin: 0;
     }
 
     .footer-title {
         font-size: 32px;
-        max-width: 520px;
+        max-width: 535px;
         margin: 0 auto 99px;
     }
 
@@ -134,7 +125,7 @@
 @media (min-width: 1280px) {
 
     .footer .container {
-        padding: 0px 25px;
+        padding: 0 25px;
     }
 
     .footer-container {
