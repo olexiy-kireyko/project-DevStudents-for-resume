@@ -5,7 +5,7 @@
   transform: translateX(-50%);
   width: 100%;
   background-color: var(--almost-white);
-  padding: 12px 0;
+  padding: 7px 0;
   border-radius: 8px;
   max-width: 335px;
   z-index: 100;
@@ -127,9 +127,10 @@
   text-transform: uppercase;
   color: var(--almost-white);
   background-color: var(--dark-teal-50);
-  padding: 15px 25px;
+  padding: 14px 25px;
   transition: background-color var(--animation);
   border-radius: 8px;
+  min-width: 91px;
 }
 
 .nav-link:focus,

@@ -34,6 +34,7 @@
 @media (min-width: 768px) {
   .hero {
     background-image: url(/img/hero/bg-img-tab.jpg);
+    padding: 280px 0 282px;
   }
 }
 
