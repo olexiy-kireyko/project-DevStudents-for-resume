@@ -1,2 +1,133 @@
-.review {
+.review-title {
+    text-align: center;
+    max-width: 335px;
+    margin: 0 auto 25px;
+}
+
+.review-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--almost-white);
+    opacity: 0.4;
+    max-width: 335px;
+    margin: 0 auto 40px;
+}
+
+.review-item {
+    background-color: var(--almost-white);
+    border-radius: 24px;
+    padding: 32px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.review-slider .slick-slide {
+    margin-right: 0;
+}
+
+.review-item-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--almost-black);
+    margin-bottom: 8px;
+}
+
+.review-item-description {
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--almost-black);
+    opacity: 0.4;
+    max-width: 303px;
+}
+
+.review-item-photo {
+    margin: 0 auto 24px;
+}
+
+.review-item-photo {
+    border-radius: 72px;
+}
+
+.review-item:not(:first-child) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .review-title {
+        font-size: 48px;
+        max-width: 704px;
+    }
+
+    .review-subtitle {
+        font-size: 14px;
+        line-height: 129%;
+        max-width: 571px;
+        margin-bottom: 75px;
+    }
+
+    .review-item {
+        max-width: 336px;
+        min-width: 336px;
+    }
+
+    .review-slider .slick-slide {
+        margin-right: 32px;
+    }
+
+    .review-item:nth-child(2n) {
+        display: flex;
+    }
+}
+
+@media (min-width: 1280px) {
+    .review-title {
+        max-width: 799px;
+    }
+
+    .review-list {
+        gap: 26px;
+    }
+
+    .review-item {
+        max-width: 377px;
+        padding: 32px 28px;
+    }
+
+    .review-slider .slick-slide {
+        margin-right: 24px;
+    }
+
+    .review-item:nth-child(2n + 1) {
+        display: flex;
+    }
+
+    .review-item-description {
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .review-item {
+        padding: 32px 36px;
+        max-width: 392px;
+    }
+
+    .review-slider .slick-slide {
+        margin-right: 32px;
+    }
+
+    .review-list {
+        gap: 32px;
+        padding: 0 50px;
+    }
 }

@@ -1,2 +1,157 @@
-.rent {
+.rent-content {
+  margin-bottom: 80px;
+}
+
+.rent-title,
+.rent-textarea-fields {
+  margin-bottom: 40px;
+}
+
+.rent-input-fields {
+  margin-bottom: 18px;
+}
+
+.rent-form {
+  width: 100%;
+}
+
+.rent-input {
+  border: 1px solid var(--almost-white-20);
+  border-radius: 12px;
+  padding: 14px 18px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--almost-white);
+  transition: border-color var(--animation);
+}
+
+.rent-input:focus,
+.rent-textarea:focus,
+.rent-input:active,
+.rent-input:hover,
+.rent-textarea:hover,
+.rent-textarea:active {
+  border-color: var(--almost-white-50);
+}
+
+.rent-input::placeholder,
+.rent-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--almost-white-40);
+}
+
+.rent-textarea {
+  border: 1px solid var(--almost-white-20);
+  border-radius: 12px;
+  padding: 14px 18px;
+  width: 100%;
+  background-color: transparent;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--almost-white);
+}
+
+.rent-img {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 412px;
+  max-width: 335px;
+}
+
+.rent-img img {
+  height: 100%;
+  max-width: none;
+  width: auto;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+  .rent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rent-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 100px;
+    max-width: 472px;
+    width: 100%;
+  }
+
+  .rent-title,
+  .rent-textarea-fields {
+    margin-bottom: 50px;
+  }
+
+  .rent-input {
+    padding: 18px;
+    width: 100%;
+  }
+
+  .rent-textarea {
+    padding: 18px;
+    width: 100%;
+  }
+
+  .rent-input::placeholder,
+  .rent-textarea::placeholder {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .rent-img {
+    max-width: 704px;
+    min-height: 534px;
+  }
+
+  .rent-img img {
+    height: 100%;
+    width: auto;
+    left: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rent-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .rent-content {
+    margin-bottom: 0;
+  }
+
+  .rent-form {
+    margin-bottom: 0;
+  }
+
+  .rent-img {
+    max-width: 658px;
+    min-height: 536px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .rent-container {
+    justify-content: flex-end;
+  }
+
+  .rent-img {
+    max-width: 768px;
+  }
 }

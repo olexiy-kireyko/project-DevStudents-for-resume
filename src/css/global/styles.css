@@ -1,9 +1,18 @@
 :root {
-  --almost-black: #040306;
-  --dark-navy: #0e1823;
-  --dark-teal: #1b414b;
   --dark-teal-50: rgba(27, 65, 75, 0.5);
+  --dark-teal: #1b414b;
   --almost-white: #fbfbfb;
+  --almost-white-70: rgba(251, 251, 251, 0.7);
+  --almost-white-50: rgba(251, 251, 251, 0.5);
+  --almost-white-40: rgba(251, 251, 251, 0.4);
+  --almost-white-35: rgba(251, 251, 251, 0.35);
+  --almost-white-30: rgba(251, 251, 251, 0.3);
+  --almost-white-20: rgba(251, 251, 251, 0.2);
+  --almost-white-10: rgba(251, 251, 251, 0.1);
+  --almost-black: #040306;
+  --almost-black-40: rgba(4, 3, 6, 0.4);
+  --almost-black-10: rgba(4, 3, 6, 0.1);
+  --dark-navy: #0e1823;
   --dark-sea: #062730;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -41,7 +50,15 @@ body {
   padding-bottom: 80px;
 }
 
+.section,
+.footer {
+  transform: translateY(-59px);
+}
+
 .btn {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -51,8 +68,9 @@ body {
   padding: 14px 32px;
   max-width: 141px;
   width: 100%;
-  text-transform: capitalize;
-  transition: color var(--animation), background-color var(--animation);
+  transition:
+    color var(--animation),
+    background-color var(--animation);
 }
 
 .btn:focus,
@@ -69,7 +87,7 @@ body {
 
 .secondary-btn {
   background-color: transparent;
-  border: 1px solid var(--almost-white);
+  border: 1px solid var(--almost-white-35);
 }
 
 .send-btn {
@@ -96,6 +114,12 @@ body {
   cursor: pointer;
 }
 
+textarea:focus,
+select:focus,
+input:focus {
+  outline: 0;
+}
+
 h1 {
   font-weight: 500;
   font-size: 32px;
@@ -111,6 +135,16 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+.section .slick-dots li.slick-active button:before,
+.section .slick-dots li button:before {
+  color: var(--almost-white);
+}
+
+.section .slick-dots {
+  bottom: -40px;
+  left: 0;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -119,6 +153,7 @@ h2 {
 
   .section {
     padding-bottom: 150px;
+    transform: translateY(-70px);
   }
 
   h1 {
@@ -145,6 +180,11 @@ h2 {
   .container {
     max-width: 1280px;
     padding: 0 50px;
+  }
+
+  .section,
+  .footer {
+    transform: translateY(-35px);
   }
 
   h1 {

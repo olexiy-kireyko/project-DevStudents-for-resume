@@ -1,2 +1,133 @@
-.about {
+.about-container {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  color: var(--dark-teal);
+  margin-bottom: 40px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 20px 80px;
+  background-color: var(--almost-white);
+  width: 100%;
+}
+
+.about-subtitle {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--dark-teal);
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--almost-black-40);
+}
+
+.about-img {
+  position: relative;
+  transform: translateY(-40px);
+  border-radius: 24px;
+  min-height: 395px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -40px;
+}
+
+.about-img img {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    max-width: 704px;
+    align-items: flex-start;
+  }
+
+  .about-wrapper {
+    padding: 50px 32px 70px;
+  }
+
+  .about-title {
+    max-width: 537px;
+    margin-bottom: 50px;
+  }
+
+  .about-content {
+    justify-content: flex-start;
+    max-width: 389px;
+  }
+
+  .about-subtitle {
+    font-size: 23px;
+  }
+
+  .about-description {
+    font-size: 13px;
+    line-height: 1.15;
+  }
+
+  .about-img {
+    min-height: 470px;
+  }
+
+  .about-img img {
+    left: 50%;
+    height: 100%;
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-container {
+    max-width: 1180px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 50px 140px;
+  }
+
+  .about-content {
+    max-width: 354px;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-container {
+    max-width: 1340px;
+  }
+
+  .about-content {
+    max-width: 404px;
+  }
 }
