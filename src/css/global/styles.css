@@ -49,6 +49,11 @@ body {
   padding-bottom: 80px;
 }
 
+.section,
+.footer {
+  transform: translateY(-59px);
+}
+
 .btn {
   display: inline-block;
   white-space: nowrap;
@@ -167,6 +172,11 @@ h2 {
   .container {
     max-width: 1280px;
     padding: 0 50px;
+  }
+
+  .section,
+  .footer {
+    transform: translateY(-35px);
   }
 
   h1 {
