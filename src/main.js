@@ -77,14 +77,26 @@ document.addEventListener('DOMContentLoaded', function () {
 const menuBtn = document.getElementById('menuBtn');
 const mobMenu = document.getElementById('mobMenu');
 const menuLinks = document.querySelectorAll('.mobile-menu a');
+const mobHeader = document.querySelector('.header');
 
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
     mobMenu.classList.remove('is-open');
+    menuBtn.classList.remove('is-active');
+    toggleHeaderFixed();
   });
 });
+
+function toggleHeaderFixed() {
+  if (mobMenu.classList.contains('is-open')) {
+    mobHeader.classList.add('is-fixed');
+  } else {
+    mobHeader.classList.remove('is-fixed');
+  }
+}
 
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('is-active');
   mobMenu.classList.toggle('is-open');
+  toggleHeaderFixed();
 });
