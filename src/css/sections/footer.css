@@ -31,10 +31,11 @@
   gap: 4px;
 }
 
-.footer-nav-item {
+.footer-nav-link {
   max-width: 66px;
   border-radius: 8px;
-  background: var(--almost-white-30);
+  background-color: var(--almost-white-30);
+  transition: background-color var(--animation);
 }
 
 .footer-nav-link:hover,
@@ -98,7 +99,7 @@
     font-size: 20px;
   }
 
-  .footer-nav-item {
+  .footer-nav-link {
     min-width: 91px;
   }
 
