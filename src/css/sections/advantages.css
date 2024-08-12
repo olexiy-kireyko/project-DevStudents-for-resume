@@ -10,7 +10,7 @@ ul {
   max-width: 335px;
   width: 100%;
   background-color: var(--dark-teal);
-  padding: 90px 32px;
+  padding: 80px 32px;
   counter-reset: num;
   list-style: none;
   margin-bottom: 20px;
@@ -71,12 +71,12 @@ ul {
     min-width: 704px;
     height: 424px;
     display: grid;
-    gap: 32px;
+    gap: 44px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .advantages-item {
-    margin: 0;
+  .advantages-item:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .advantages-item-content {
@@ -97,18 +97,12 @@ ul {
     min-width: 716px;
     height: 424px;
     display: grid;
-    padding: 80px 32px;
-    gap: 32px;
+    padding: 90px 50px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .advantages-item {
-    margin-left: 18px;
-    margin-right: 18px;
-  }
   .advantages-image {
     margin-left: 32px;
     min-width: 432px;
-    height: 424px;
   }
 }
