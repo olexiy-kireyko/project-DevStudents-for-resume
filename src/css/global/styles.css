@@ -68,7 +68,6 @@ body {
   padding: 14px 32px;
   max-width: 141px;
   width: 100%;
-  text-transform: capitalize;
   transition:
     color var(--animation),
     background-color var(--animation);
@@ -115,6 +114,12 @@ body {
   cursor: pointer;
 }
 
+textarea:focus,
+select:focus,
+input:focus {
+  outline: 0;
+}
+
 h1 {
   font-weight: 500;
   font-size: 32px;
@@ -130,9 +135,9 @@ h2 {
   letter-spacing: -0.02em;
 }
 
-.slick-dots li.slick-active button:before,
-.slick-dots li button:before {
-  color: var(--almost-white) !important;
+.section .slick-dots li.slick-active button:before,
+.section .slick-dots li button:before {
+  color: var(--almost-white);
 }
 
 .section .slick-dots {
