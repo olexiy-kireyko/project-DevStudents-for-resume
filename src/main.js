@@ -76,6 +76,13 @@ document.addEventListener('DOMContentLoaded', function () {
 //mobile menu
 const menuBtn = document.getElementById('menuBtn');
 const mobMenu = document.getElementById('mobMenu');
+const menuLinks = document.querySelectorAll('.mobile-menu a');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobMenu.classList.remove('is-open');
+  });
+});
 
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('is-active');
