@@ -27,7 +27,7 @@
     width: 100%;
 }
 
-.slick-slide {
+.review-slider .slick-slide {
     margin-right: 0;
 }
 
@@ -80,7 +80,7 @@
         min-width: 336px;
     }
 
-    .slick-slide {
+    .review-slider .slick-slide {
         margin-right: 32px;
     }
 
@@ -103,7 +103,7 @@
         padding: 32px 28px;
     }
 
-    .slick-slide {
+    .review-slider .slick-slide {
         margin-right: 24px;
     }
 
