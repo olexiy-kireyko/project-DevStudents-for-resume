@@ -1,3 +1,8 @@
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import $ from 'jquery';
+import 'slick-carousel';
+
 // slick-carousel-yachts
 $('.yachts-slider').slick({
   variableWidth: true,
@@ -27,6 +32,7 @@ $('.yachts-slider').slick({
 //smooth scroll
 document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll('a[href^="#"]');
+
   for (let link of links) {
     link.addEventListener('click', function (event) {
       event.preventDefault();
