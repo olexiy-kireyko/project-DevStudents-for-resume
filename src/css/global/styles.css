@@ -136,6 +136,7 @@ h2 {
 
 .section .slick-dots {
   bottom: -40px;
+  left: 0;
 }
 
 @media (min-width: 768px) {
