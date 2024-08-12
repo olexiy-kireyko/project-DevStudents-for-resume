@@ -1,3 +1,5 @@
 # Dev Students project about luxury yachts
 
-![Dev Students logo](https://)
+<div align="center">
+  <img src="assets/logo.png" alt="Логотип" width="200"/>
+</div>
