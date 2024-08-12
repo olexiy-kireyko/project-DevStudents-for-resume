@@ -23,7 +23,7 @@
     <link rel="modulepreload" crossorigin href="/project-DevStudents/assets/vendor-965ca48a.js">
     <link rel="modulepreload" crossorigin href="/project-DevStudents/assets/slick-e4875221.js">
     <link rel="stylesheet" href="/project-DevStudents/assets/slick-1752c040.css">
-    <link rel="stylesheet" href="/project-DevStudents/assets/index-8379b661.css">
+    <link rel="stylesheet" href="/project-DevStudents/assets/index-edf8de7c.css">
   </head>
   <body>
     <header class="header">
@@ -399,8 +399,73 @@
   <div class="container">advantages</div>
 </section>
 
-      <section class="rent section">
-  <div class="container">rent</div>
+      <section class="rent section" id="rent">
+  <div class="container">
+    <div class="rent-container">
+      <div class="rent-content">
+        <h2 class="rent-title">Rent a yacht now</h2>
+        <form class="rent-form">
+          <div class="rent-input-fields">
+            <label>
+              <input
+                class="rent-input"
+                type="text"
+                name="input-name"
+                placeholder="Full name"
+                pattern="[A-Za-z\s]+"
+                required
+              />
+            </label>
+          </div>
+          <div class="rent-input-fields">
+            <label>
+              <input
+                class="rent-input"
+                type="email"
+                name="input-email"
+                placeholder="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required
+              />
+            </label>
+          </div>
+          <div class="rent-input-fields">
+            <label>
+              <input
+                class="rent-input"
+                type="tel"
+                name="input-tel-number"
+                placeholder="Phone number"
+                pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+                required
+              />
+            </label>
+          </div>
+          <div class="rent-textarea-fields">
+            <label>
+              <textarea
+                rows="4"
+                class="rent-textarea"
+                name="textarea-user-comment"
+                id="user-comment"
+                placeholder="Comment"
+                minlength="10"
+                required
+              ></textarea>
+            </label>
+          </div>
+          <button class="btn primary-btn send-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="rent-img">
+        <img
+          srcset="/project-DevStudents/assets/yacht-img-@1x-05fb660a.jpg , /project-DevStudents/assets/yacht-img-@2x-5b9bc16b.jpg 2x"
+          src="/project-DevStudents/assets/yacht-img-@1x-05fb660a.jpg"
+          alt="Photo of the yacht"
+        />
+      </div>
+    </div>
+  </div>
 </section>
 
       <section class="review section" id="review">
