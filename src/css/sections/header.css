@@ -11,6 +11,10 @@
   z-index: 100;
 }
 
+.header.is-fixed {
+  position: fixed;
+}
+
 .header-container {
   padding: 0 20px;
 }
@@ -130,6 +134,10 @@
   padding: 14px 25px;
   transition: background-color var(--animation);
   border-radius: 8px;
+}
+
+.mobile-menu .nav-link,
+.header .nav-link {
   min-width: 91px;
 }
 
