@@ -1,7 +1,32 @@
+// slick-carousel-yachts
+$('.yachts-slider').slick({
+  variableWidth: true,
+  slidesToShow: 3,
+  dots: true,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+        fade: true,
+        variableWidth: false,
+      },
+    },
+  ],
+});
+
 //smooth scroll
 document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll('a[href^="#"]');
-
   for (let link of links) {
     link.addEventListener('click', function (event) {
       event.preventDefault();
