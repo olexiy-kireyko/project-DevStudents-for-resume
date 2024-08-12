@@ -29,8 +29,10 @@
 
 .rent-input:focus,
 .rent-textarea:focus,
+.rent-input:active,
 .rent-input:hover,
-.rent-textarea:hover {
+.rent-textarea:hover,
+.rent-textarea:active {
   border-color: var(--almost-white-50);
 }
 
