@@ -1,9 +1,17 @@
 :root {
-  --almost-black: #040306;
-  --dark-navy: #0e1823;
-  --dark-teal: #1b414b;
   --dark-teal-50: rgba(27, 65, 75, 0.5);
+  --dark-teal: #1b414b;
   --almost-white: #fbfbfb;
+  --almost-white-70: rgba(251, 251, 251, 0.7);
+  --almost-white-40: rgba(251, 251, 251, 0.4);
+  --almost-white-35: rgba(251, 251, 251, 0.35);
+  --almost-white-30: rgba(251, 251, 251, 0.3);
+  --almost-white-20: rgba(251, 251, 251, 0.2);
+  --almost-white-10: rgba(251, 251, 251, 0.1);
+  --almost-black: #040306;
+  --almost-black-40: rgba(4, 3, 6, 0.4);
+  --almost-black-10: rgba(4, 3, 6, 0.1);
+  --dark-navy: #0e1823;
   --dark-sea: #062730;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -42,6 +50,9 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -71,7 +82,7 @@ body {
 
 .secondary-btn {
   background-color: transparent;
-  border: 1px solid var(--almost-white);
+  border: 1px solid var(--almost-white-35);
 }
 
 .send-btn {
