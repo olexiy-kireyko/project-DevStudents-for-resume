@@ -19,6 +19,9 @@ export default defineConfig(({ command }) => {
               if (id.includes('slick-carousel')) {
                 return 'slick';
               }
+              if (id.includes('animate.css')) {
+                return 'animate';
+              }
               return 'vendor';
             }
           },
@@ -29,7 +32,7 @@ export default defineConfig(({ command }) => {
     },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
     optimizeDeps: {
-      include: ['slick-carousel'],
+      include: ['slick-carousel', 'animate.css'],
     },
   };
 });
